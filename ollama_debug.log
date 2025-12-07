@@ -1,0 +1,24 @@
+2025-11-26 16:29:53 - --- STARTING NEW REQUEST ---
+2025-11-26 16:29:53 - Food item received:  1 cups of milk
+2025-11-26 16:29:53 - Ollama URL: http://192.168.100.3:9000/api/generate
+2025-11-26 16:29:53 - Request Payload: {"model":"llama3:8b-instruct-q2_K","prompt":"Predict the blood sugar impact of eating:  1 cups of milk. The response must be only one of these words: HIGH, MODERATE, or LOW. Do not add any extra text or explanation.","stream":false}
+*   Trying 192.168.100.3:9000...
+* Connected to 192.168.100.3 (192.168.100.3) port 9000
+> POST /api/generate HTTP/1.1
+Host: 192.168.100.3:9000
+Accept: */*
+Content-Type: application/json
+Authorization: Basic TWFobW91ZDpNYWhtb3VkMTQyNA==
+Content-Length: 232
+
+< HTTP/1.1 200 OK
+< Server: nginx/1.28.0
+< Date: Wed, 26 Nov 2025 15:29:33 GMT
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 540
+< Connection: keep-alive
+< 
+* Connection #0 to host 192.168.100.3 left intact
+2025-11-26 16:29:53 - SUCCESS: HTTP 200 received.
+2025-11-26 16:29:53 - Ollama Raw Response: {"model":"llama3:8b-instruct-q2_K","created_at":"2025-11-26T15:29:33.7681337Z","response":"LOW","done":true,"done_reason":"stop","context":[128006,882,128007,271,54644,279,6680,13465,5536,315,12459,25,220,220,16,26446,315,14403,13,578,2077,2011,387,1193,832,315,1521,4339,25,38717,11,19186,643,2390,11,477,41605,13,3234,539,923,904,5066,1495,477,16540,13,128009,128006,78191,128007,271,9628],"total_duration":245741500,"load_duration":128490600,"prompt_eval_count":53,"prompt_eval_duration":79700900,"eval_count":2,"eval_duration":36000900}
+2025-11-26 16:29:53 - --- END REQUEST ---
